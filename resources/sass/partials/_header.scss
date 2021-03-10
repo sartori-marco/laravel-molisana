@@ -4,6 +4,7 @@ header{
       list-style: none;
       li{
         display: inline-block;
+        margin-bottom: $mr10;
         a{
           text-decoration: none;
           color: $colorTextNav;

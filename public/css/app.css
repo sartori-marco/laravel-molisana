@@ -19,6 +19,7 @@ header ul {
 
 header ul li {
   display: inline-block;
+  margin-bottom: 10px;
 }
 
 header ul li a {
