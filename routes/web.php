@@ -14,5 +14,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('news', function () {
+    return view('news');
+    // riga 21 news deve essere uguale al nome del file
 });
