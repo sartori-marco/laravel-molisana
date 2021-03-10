@@ -11,6 +11,7 @@
 
   .card{
     width: calc(100% / 3);
+    position: relative;
 
       img{
         max-width: 100%;
@@ -18,9 +19,16 @@
 
     .overlay{
         display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
     &:hover .overlay{
       display: block;
+    }
+    &:hover img{
+      opacity: 0.2;
     }
 
   }

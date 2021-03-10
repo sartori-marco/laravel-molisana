@@ -44,6 +44,7 @@ header ul li a:hover {
 
 .card-container .card {
   width: calc(100% / 3);
+  position: relative;
 }
 
 .card-container .card img {
@@ -52,9 +53,17 @@ header ul li a:hover {
 
 .card-container .card .overlay {
   display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .card-container .card:hover .overlay {
   display: block;
+}
+
+.card-container .card:hover img {
+  opacity: 0.2;
 }
 
