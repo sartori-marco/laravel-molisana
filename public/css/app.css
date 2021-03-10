@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 header {
   text-align: center;
 }
@@ -30,5 +35,26 @@ header ul li a:hover {
   height: 1300px;
   background-image: url(/images/molisana-home.jpg?cb7db241726fb646d7e1c8553429c07c);
   background-size: cover;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-container .card {
+  width: calc(100% / 3);
+}
+
+.card-container .card img {
+  max-width: 100%;
+}
+
+.card-container .card .overlay {
+  display: none;
+}
+
+.card-container .card:hover .overlay {
+  display: block;
 }
 
