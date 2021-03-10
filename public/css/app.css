@@ -26,3 +26,9 @@ header ul li a:hover {
   background-color: lightblue;
 }
 
+.foto {
+  height: 1300px;
+  background-image: url(/images/molisana-home.jpg?cb7db241726fb646d7e1c8553429c07c);
+  background-size: cover;
+}
+
