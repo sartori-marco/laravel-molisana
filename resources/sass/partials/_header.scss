@@ -1,0 +1,18 @@
+header{
+  text-align: center;
+    ul{
+      list-style: none;
+      li{
+        display: inline-block;
+        a{
+          text-decoration: none;
+          color: $colorTextNav;
+          padding: $pd10;
+          &:hover{
+           background-color: $colorNav;
+          }
+        }
+
+      }
+    }
+}
