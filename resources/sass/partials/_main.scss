@@ -4,7 +4,7 @@
   background-size: cover;
 }
 
-
+// SEZIONE CENTRALE TIPOLOGIE DI PASTA
 .card-container{
   display: flex;
   flex-wrap: wrap;
@@ -32,9 +32,12 @@
     }
   }
 }
+
+// SEZIONE AL CLICK DELLA TIPOLOGIA DI PASTA
 .prodotti img{
   max-width: 100%;
   display: flex;
+  padding-bottom: $pd10;
 }
 
 .box-icone{

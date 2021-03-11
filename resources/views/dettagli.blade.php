@@ -31,7 +31,7 @@
                 <p>{!!$formato['cottura']!!}</p>
             </div>
             <div class="icone">
-                <<i class="fas fa-weight-hanging"></i>
+                <i class="fas fa-weight-hanging"></i>
                 <p>{!!$formato['peso']!!}</p>
             </div>
         </div>

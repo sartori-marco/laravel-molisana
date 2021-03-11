@@ -71,6 +71,7 @@ header ul li a:hover {
 .prodotti img {
   max-width: 100%;
   display: flex;
+  padding-bottom: 10px;
 }
 
 .box-icone {
