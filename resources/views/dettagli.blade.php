@@ -1,14 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+@extends('layouts.app')
+
+{{-- sistemare il nome che non si vede --}}
+@section('title',$formato['titolo'])    
+
+@section('content')
     <div class="container">
-        
+        <h1>{{$formato['titolo']}}</h1>    
     </div>
-</body>
-</html>
+
+    <div class="prodotti">
+        <img src="{{$formato['src-h']}}" alt="immagine pasta">
+        <img src="{{$formato['src-p']}}" alt="immagine pasta">
+    </div>
+
+
+@endsection

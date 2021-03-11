@@ -26,13 +26,12 @@ Route::get('/prodotti', function () {
     return view('prodotti', $data);
 });
 
+// route per i dettagli di ogni singola pasta
 Route::get('/dettaglio/{id}', function ($id) {
-    $pasta = config('pasta');
-    
+    $pasta = config('pasta'); 
     $prodotto = $pasta[$id];
-
     $data = [
-        'prodotto' => $prodotto
+        'formato' => $prodotto
     ];
     return view('dettagli', $data);
 })->name('dettagli-pagina');
