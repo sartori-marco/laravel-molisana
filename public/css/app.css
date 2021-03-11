@@ -73,3 +73,9 @@ header ul li a:hover {
   display: flex;
 }
 
+.box-icone {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+

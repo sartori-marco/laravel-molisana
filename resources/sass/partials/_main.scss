@@ -36,3 +36,9 @@
   max-width: 100%;
   display: flex;
 }
+
+.box-icone{
+  display: flex;
+  justify-content: space-around;
+  padding: $pd10;
+}
