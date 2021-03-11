@@ -68,3 +68,8 @@ header ul li a:hover {
   opacity: 0.2;
 }
 
+.prodotti img {
+  max-width: 100%;
+  display: flex;
+}
+
