@@ -20,15 +20,22 @@ Route::get('/', function () {
 
 
 Route::get('/prodotti', function () {
+    // passo l'array pasta
   $pasta = config('pasta');       
-  
   $data = ['tipologie' => $pasta];
     return view('prodotti', $data);
 });
 
 Route::get('/dettaglio/{id}', function ($id) {
-    return view('dettagli');
-});
+    $pasta = config('pasta');
+    
+    $prodotto = $pasta[$id];
+
+    $data = [
+        'prodotto' => $prodotto
+    ];
+    return view('dettagli', $data);
+})->name('dettagli-pagina');
 
 Route::get('news', function () {
     return view('news');
