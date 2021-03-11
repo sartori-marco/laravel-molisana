@@ -17,14 +17,21 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('prodotti', function () {
-    $pasta = config('pasta');
-    dd($pasta);
-         $data = ['tipologie' => $pasta];
+
+
+Route::get('/prodotti', function () {
+  $pasta = config('pasta');       
+  
+  $data = ['tipologie' => $pasta];
     return view('prodotti', $data);
+});
+
+Route::get('/dettaglio/{id}', function ($id) {
+    return view('dettagli');
 });
 
 Route::get('news', function () {
     return view('news');
     // riga 21 news deve essere uguale al nome del file
 });
+
