@@ -79,3 +79,10 @@ header ul li a:hover {
   padding: 10px;
 }
 
+footer {
+  background-image: url(/images/footer-montagne-bottom.jpg?d53b01335f4c26b84b40ca2ab0a64ece);
+  height: 200px;
+  background-size: cover;
+  padding-top: 10px;
+}
+
