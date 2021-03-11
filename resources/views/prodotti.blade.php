@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-  <!-- <p>codice prodotti</p> -->
   <div class="container">
     <div class="card-container">
         @foreach($tipologie as $tipologia)
